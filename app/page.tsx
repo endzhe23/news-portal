@@ -1,10 +1,15 @@
-import { Htag } from "@/components";
-import { JSX } from "react";
+'use client';
 
-export default function Home(): JSX.Element {
+import { useState, useEffect } from 'react';
+import { Header } from '@/components/Header/Header';
+import styles from './page.module.scss';
+
+export default function Home() {
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
   return (
-    <>
-      <Htag tag='h1'>Текст</Htag>
-    </>  
-  );      
+    <div className={styles.wrapper}>
+      <Header onContactClick={() => setIsContactFormOpen(true)} />
+    </div>
+  );
 }
