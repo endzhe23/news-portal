@@ -9,12 +9,12 @@ interface NewsCardProps {
 
 export const NewsCard = ({ news }: NewsCardProps) => {
   return (
-    <Link href={`/news/${news.id}`} className={styles.card}>
+    <Link href="/news/1" className={styles.card}>
       <Image
         src={news.image}
         alt={news.title}
-        width={400}
-        height={200}
+        width={440}
+        height={300}
         className={styles.image}
         priority={false}
       />

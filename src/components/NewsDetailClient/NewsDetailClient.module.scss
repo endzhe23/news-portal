@@ -46,9 +46,13 @@
 
 .image {
   width: 100%;
-  height: auto;
+  height: 320px;
   display: block;
   object-fit: cover;
+
+   @media (max-width: 768px) {
+    height: 232px;
+  }
 }
 
 .textContent {
@@ -58,8 +62,8 @@
 }
 
 .title {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -71,14 +75,25 @@
 }
 
 .date {
-  font-size: 14px;
-  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
   margin: 0;
 }
 
 .description {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.paragraph {
   font-size: 16px;
-  color: #aaaaaa;
+  font-weight: 400;
+  color: #ffffff;
   line-height: 1.8;
   margin: 0;
 }

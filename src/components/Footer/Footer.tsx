@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className={styles.content}>
         <div className={styles.logo}>
            <img 
-            src="/images/logo.svg" 
+            src="/images/logoFooter.svg" 
             alt="Логотип" 
             className={styles.logoImage}
            />

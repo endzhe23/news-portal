@@ -24,13 +24,14 @@
 
 .modal {
   background-color: #ffffff;
-  border-radius: 16px;
-  max-width: 450px;
+  border-radius: 20px;
+  max-width: 520px;
   width: 100%;
   position: relative;
   animation: slideIn 0.3s ease;
 
   @media (max-width: 480px) {
+    max-width: 320px;
     margin: 10px;
     border-radius: 12px;
   }
@@ -60,15 +61,15 @@
 }
 
 .title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #333333;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0F0F17;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
 
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -105,9 +106,9 @@
 }
 
 .label {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F0F17;
 }
 
 .input {
@@ -156,8 +157,9 @@
 }
 
 .checkboxLabel {
-  font-size: 14px;
-  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0F0F17;
   line-height: 1.4;
   cursor: pointer;
 }
@@ -165,14 +167,14 @@
 .submitButton {
   background: #ffffff;
   border: 2px solid #ff6b35;
-  color: #ff6b35;
+  color: #0F0F17;
   padding: 16px;
   border-radius: 8px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 1px;
   margin-top: 8px;
 

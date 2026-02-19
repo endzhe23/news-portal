@@ -1,9 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { Header } from '@/components/Header/Header';
-import { Footer } from '@/components/Footer/Footer';
+import { Header } from '@/src/components/Header/Header';
+import { Footer } from '@/src/components/Footer/Footer';
 import type { NewsItem } from '@/src/types/news';
 import styles from './NewsDetailClient.module.scss';
 
@@ -23,8 +22,8 @@ export const NewsDetailClient = ({ news }: NewsDetailClientProps) => {
               <Image
                 src={news.image}
                 alt={news.title}
-                width={600}
-                height={400}
+                width={440}
+                height={320}
                 className={styles.image}
                 priority
               />
@@ -33,7 +32,8 @@ export const NewsDetailClient = ({ news }: NewsDetailClientProps) => {
             <div className={styles.textContent}>
               <h1 className={styles.title}>{news.title}</h1>
               <p className={styles.date}>{news.date}</p>
-              <p className={styles.description}>{news.content}</p>
+              <p className={styles.description}>{news.description}</p>
+              <p className={styles.paragraph}>{news.content}</p>
             </div>
           </div>
         </div>

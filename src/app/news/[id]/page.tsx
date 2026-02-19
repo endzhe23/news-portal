@@ -1,16 +1,19 @@
 import { notFound } from 'next/navigation';
-import { NewsDetailClient } from '@/components/NewsDetailClient/NewsDetailClient';
+import { NewsDetailClient } from '@/src/components/NewsDetailClient/NewsDetailClient';
 import newsData from '@/src/data/news.json';
 import type { NewsItem } from '@/src/types/news';
 
 export async function generateStaticParams() {
-  return [{ id: newsData[0]?.id || '1' }];
+  return newsData.map((news) => ({
+    id: news.id,
+  }));
 }
 
 export const revalidate = 60;
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  const news = newsData[0];
+  const { id } = await params;
+  const news = newsData.find((item) => item.id === id);
 
   if (!news) {
     return {
@@ -25,7 +28,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 }
 
 export default async function NewsDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const news = newsData[0] as NewsItem | undefined;
+  const { id } = await params;
+  const news = newsData.find((item) => item.id === id) as NewsItem | undefined;
 
   if (!news) {
     notFound();

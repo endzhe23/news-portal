@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Header } from '@/components/Header/Header';
-import { Footer } from '@/components/Footer/Footer';
-import { NewsCard } from '@/components/NewsCard/NewsCard';
-import { ContactForm } from '@/components/ContactForm/ContactForm';
+import { Header } from '@/src/components/Header/Header';
+import { NewsCard } from '@/src/components/NewsCard/NewsCard';
+import { ContactForm } from '@/src/components/ContactForm/ContactForm';
 import type { NewsItem } from '@/src/types/news';
 import styles from './page.module.scss';
 
@@ -34,7 +33,6 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
       <Header onContactClick={() => setIsContactFormOpen(true)} />
-
       <main className={styles.main}>
         <div className={styles.container}>
           <h1 className={styles.title}>Новости</h1>
@@ -52,8 +50,6 @@ export default function Home() {
           )}
         </div>
       </main>
-
-      <Footer />
 
       <ContactForm isOpen={isContactFormOpen} onClose={() => setIsContactFormOpen(false)} />
     </div>
