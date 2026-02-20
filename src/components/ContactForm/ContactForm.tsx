@@ -112,9 +112,6 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
-            <label className={styles.label} htmlFor="name">
-              Имя
-            </label>
             <input
               type="text"
               id="name"
@@ -127,9 +124,6 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label className={styles.label} htmlFor="phone">
-              Телефон
-            </label>
             <IMaskInput
               mask="+7 (000) 000-00-00"
               id="phone"
@@ -142,9 +136,6 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label className={styles.label} htmlFor="email">
-              E-mail
-            </label>
             <input
               type="email"
               id="email"

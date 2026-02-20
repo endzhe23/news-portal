@@ -12,8 +12,13 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 1024px) {
+    padding: 18px 32px;
+  }
+
   @media (max-width: 768px) {
-    padding: 16px 20px;
+    padding: 14px 16px;
+    height: 83px;
   }
 }
 
@@ -24,6 +29,10 @@
   text-decoration: none;
   letter-spacing: 2px;
 
+  @media (max-width: 768px) {
+    letter-spacing: 1px;
+  }
+
   span {
     color: #ff6b35;
   }
@@ -33,6 +42,11 @@
   height: 84px;
   width:70px;
   display: block;
+
+  @media (max-width: 768px) {
+    height: 53px;
+    width: 44px;
+  }
 }
 
 .contactButton {
@@ -52,8 +66,12 @@
     color: #ffffff;
   }
 
-  @media (max-width: 768px) {
-    padding: 10px 16px;
+  @media (max-width: 1024px) {
+    padding: 10px 20px;
     font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px 12px;
   }
 }

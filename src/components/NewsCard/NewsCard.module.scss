@@ -19,13 +19,17 @@
   object-fit: cover;
   display: block;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     height: 218px;
   }
 }
 
 .content {
   padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 }
 
 .title {
@@ -37,8 +41,12 @@
   letter-spacing: 1px;
   line-height: 1.3;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
   }
 }
 
@@ -52,6 +60,11 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
+    -webkit-line-clamp: 2;
+  }
 }
 
 .date {
