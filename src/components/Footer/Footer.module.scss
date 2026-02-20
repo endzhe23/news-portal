@@ -43,9 +43,11 @@
   width: 103px;
   display: block;
 
+
   @media (max-width: 768px) {
-     height: 144px;
-     width: 120px;
+    height: 144px;
+    width: 120px;
+    margin: 0 auto;
   }
 }
 

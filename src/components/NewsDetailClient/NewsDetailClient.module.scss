@@ -61,6 +61,7 @@
 
    @media (max-width: 768px) {
     height: 232px;
+    margin-top: 40px;
   }
 }
 
@@ -84,6 +85,11 @@
 
   @media (max-width: 1024px) {
     font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 12px;
+    margin: 0;
   }
 }
 
