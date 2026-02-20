@@ -164,7 +164,7 @@ export const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
           </div>
 
           <button type="submit" className={styles.submitButton}>
-            Отправить
+            <span>Отправить</span>
           </button>
         </form>
       </div>
